@@ -42,13 +42,13 @@ img {
 
 body {
     width: 100%;
-    text-align: center;
     background-color: #eeeeee;
 }
 
 .taitle {
     max-width: 960px;
     margin: 0 auto;
+    text-align: center;
     color: #177d74;
     font-size: 30px;
     padding: 25px;
@@ -61,24 +61,16 @@ body {
     justify-content: space-between;
 }
 
-.content1 {
+.contents {
     background-color: #ffffff;
-    margin: 15px;
-}
-.content2 {
-    background-color: #ffffff;
-    margin: 15px;
-}
-.content3 {
-    background-color: #ffffff;
-    margin: 15px;
+    /*margin: 15px;*/
+    width: 32%;
 }
 
 h2 {
     color: #177d74;
     font-size: 20px;
     margin: 10px;
-    text-align: left;
     border-left: 8px solid #177d74;
     padding-left: 5px;
 }
@@ -87,12 +79,16 @@ p {
     color: #272525;
     font-size: 15px;
     margin: 10px;
-    text-align: left;
+    line-height: 1.5;
 }
 
 @media screen and (max-width: 400px) {
     /*画面サイズが400px以下の場合ここの記述が適用される*/
     .content {
         display: block;
+    }
+    .contents {
+        width: 95%;
+        margin: 0 auto;
     }
 }
